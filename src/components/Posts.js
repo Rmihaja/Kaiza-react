@@ -1,5 +1,14 @@
+import { useState } from "react";
+
 const Posts = () => {
 
+    const [photoDescription, setPhotoDescription] = useState('');
+
+    const onAddPhoto = event => {
+        let photoName = event.nativeEvent.target.files[0].name;
+        console.log(photoName);
+        setPhotoDescription(photoName);
+    }
 
     return ( 
         <section className="display">
@@ -9,8 +18,8 @@ const Posts = () => {
                     <button className="round-corner">+</button>
                 </div>
                 <div className="box">
-                    <label className="morecontent">+ Photo<input type='file' accept='image/*'></input></label>
-                    <p></p>
+                    <label className="morecontent">+ Photo<input type='file' accept='image/*' onChange={onAddPhoto}></input></label>
+                    <p>{photoDescription}</p>
                 </div>
             </div>
             <ul className="posts"></ul>
