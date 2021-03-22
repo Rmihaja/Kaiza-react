@@ -1,10 +1,16 @@
-import './App.css';
+import './styles/theme.css';
+import './styles/App.css';
+import './styles/posts.css';
+import './styles/messages.css'
+import Header from './components/Header'
 
 function App() {
+
   return (
-    <div className="App">
+    <div className="App light">
+      <Header />  
       <div className="content">
-        <h1>Hello world!</h1>
+        
       </div>
     </div>
   );
