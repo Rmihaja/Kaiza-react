@@ -1,8 +1,9 @@
 import './styles/theme.css';
 import './styles/App.css';
 import './styles/posts.css';
-import './styles/messages.css'
-import Header from './components/Header'
+import './styles/messages.css';
+import Header from './components/Header';
+import Posts from './components/Posts';
 
 function App() {
 
@@ -10,7 +11,9 @@ function App() {
     <div className="App light">
       <Header />  
       <div className="content">
-        
+        <main>
+          <Posts />
+        </main>
       </div>
     </div>
   );
