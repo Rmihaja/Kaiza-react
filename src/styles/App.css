@@ -10,7 +10,7 @@ html {
    width: 100%;
 }
 
-body {
+.App {
    margin: 0px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    background-color: var(--bg);
