@@ -1,4 +1,6 @@
 const Header = () => {
+
+    // component
     return ( 
         <header className='row'>
             <h1 className="title">Kaiza</h1>

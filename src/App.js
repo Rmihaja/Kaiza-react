@@ -3,7 +3,7 @@ import './styles/App.css';
 import './styles/posts.css';
 import './styles/messages.css';
 import Header from './components/Header';
-import Posts from './components/Posts';
+import Home from './components/Home';
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
       <Header />  
       <div className="content">
         <main>
-          <Posts />
+          <Home />
         </main>
       </div>
     </div>
