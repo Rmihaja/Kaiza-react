@@ -12,8 +12,6 @@ const PostAdd = ({ setPosts }) => {
         console.log(photoName);
         setPhotoDescription(photoName);
     }
-    
-
 
     return ( 
             <div className="add post">

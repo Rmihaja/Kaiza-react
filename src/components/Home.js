@@ -10,11 +10,19 @@ const Home = () => {
         {id: 0, author: {name: 'Mihaja Razafimahefa', profilePicture: null}, submitDate: '18:42', data: {content: 'Welcome to Kaiza posts!', additionalContent: null}}
     ]);
 
+    
+    // * event listener
+    // delete the post selected by user
+    const onDeletePost = (postId) => {
+        const filteredPosts = posts.filter(post => post.id !== postId);
+        setPosts(filteredPosts);
+    }
+
 
     return (
         <div className="display">
             <PostAdd setPosts={setPosts} />
-            <Posts posts={posts} />
+            <Posts posts={posts} onDeletePost={onDeletePost} />
         </div>
     );
     
