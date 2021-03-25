@@ -7,6 +7,7 @@ const Home = () => {
     
     // posts list
     const [posts, setPosts] = useState([]); // ? react hook to watch variable each times it gets updated
+    const [fetchPending, setFetchPending] = useState(true);
 
     // useEffect to get posts data from json server on first reload
     useEffect(() => {
@@ -20,6 +21,7 @@ const Home = () => {
             .then(data => {
                 // response returns json data promise
                 setPosts(data);
+                setFetchPending(false); 
             })
     },
         // dependency of useEffect
@@ -38,6 +40,8 @@ const Home = () => {
     return (
         <div className="display">
             <PostAdd setPosts={setPosts} />
+            {/* temporarily conditionnal template to show while posts data is being fetched */}
+            {fetchPending && <p>Recent posts is on the way...</p>}
             <Posts posts={posts} onDeletePost={onDeletePost} />
         </div>
     );
