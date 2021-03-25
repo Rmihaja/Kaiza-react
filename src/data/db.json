@@ -1,0 +1,28 @@
+{
+    "posts": [
+        {
+            "id": 0, 
+            "author": {
+                "name": "Mihaja Razafimahefa", 
+                "profilePicture": null
+                }, 
+            "submitDate": "18:42", 
+            "data": {
+                "content": "How is your day going? Mine was good!",
+                 "additionalContent": null
+            }
+        },
+        {
+            "id": 1, 
+            "author": {
+                "name": "Mihaja Razafimahefa", 
+                "profilePicture": null
+                }, 
+            "submitDate": "18:40", 
+            "data": {
+                "content": "Welcome to Kaiza posts!",
+                 "additionalContent": null
+            }
+        }
+    ]
+}

@@ -3,7 +3,8 @@ const Posts = ({ posts, onDeletePost }) => {
     return (
         <ul className="posts">
             {posts.map(post => (
-                <li className="show">
+                // each li should always have an unique id
+                <li className="show" key={ post.id }>
                     <div className="metadata">
                         <img className="profile-picture" src={ post.author.profilePicture } alt="MR"/>
                         <h2>{ post.author.name }</h2>
