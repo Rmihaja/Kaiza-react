@@ -1,5 +1,5 @@
 import { useState } from "react";
-const PostAdd = ({ setPosts }) => {
+const PostAdd = () => {
 
     
     // * variable init

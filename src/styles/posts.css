@@ -12,7 +12,6 @@
 .posts {
    width: 80%;
    align-items: center;
-   flex-direction: column-reverse;
 }
 
 .posts li {
