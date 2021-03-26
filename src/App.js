@@ -4,6 +4,7 @@ import './styles/posts.css';
 import './styles/messages.css';
 import Header from './components/Header';
 import Home from './components/Home';
+import Navbar from './components/Navbar';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <div className="App light">
       <Header />  
       <div className="content">
+        <Navbar />
         <main>
           <Home />
         </main>

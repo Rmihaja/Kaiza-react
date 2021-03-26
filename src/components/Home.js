@@ -5,6 +5,7 @@ import { Posts } from "./Posts";
 const Home = () => {
 
     // fetching posts list
+    // set data received posts variable
     const { data: posts, isFetching, error } = useFetch('http://localhost:8000/posts');
     
     // * event listener

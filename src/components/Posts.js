@@ -11,7 +11,7 @@ const Posts = ({ posts, onDeletePost }) => {
                         <h3>{post.submitDate}</h3>
                         <button className="padding" onClick={() => onDeletePost(post.id)}>Delete</button>
                     </div>
-                    <p>{ post.data.content }</p>
+                    <p>{ post.content }</p>
                 </li>
             ))}
         </ul>
