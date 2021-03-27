@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const NotFound = () => {
     return ( 
-        <section>
+        <section className="info">
             <span class="material-icons">
                 error
             </span>
