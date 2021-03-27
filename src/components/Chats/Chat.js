@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom"
+import { useHistory, useParams } from "react-router-dom"
 import useFetch from "../../hooks/useFetch";
 import MessageAdd from "./MessageAdd"
 import Messages from "./Messages"
@@ -14,6 +14,9 @@ const Chat = () => {
 
     // send chat messages
     const [content, setContent] = useState('');
+
+    // get navigation history
+    const history = useHistory();
 
     // send message to server
     const sendMessage = event => {
@@ -37,6 +40,7 @@ const Chat = () => {
         })
             .then(() => {
                 console.log('message sent successfully');
+                history.push('/chats/' + id);
         })
     }
 

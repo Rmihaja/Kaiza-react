@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import PostAdd from "./Posts/PostAdd";
 import Posts from "./Posts/Posts";
@@ -11,6 +12,9 @@ const Home = () => {
     
     // submit post to server
     const [content, setContent] = useState('');
+
+    // getting navigation history
+    const history = useHistory();
 
     const sendPost = event => {
         event.preventDefault();
@@ -29,7 +33,8 @@ const Home = () => {
             body: JSON.stringify(post)
         })
             .then(() => {
-            console.log('post submitted successfully');
+                console.log('post submitted successfully');
+                history.push('/');
         })
     }
 
