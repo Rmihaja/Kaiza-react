@@ -1,6 +1,6 @@
 import useFetch from "../hooks/useFetch";
-import PostAdd from "./PostAdd";
-import { Posts } from "./Posts";
+import PostAdd from "./Posts/PostAdd";
+import Posts from "./Posts/Posts";
 
 const Home = () => {
 
@@ -17,14 +17,14 @@ const Home = () => {
 
 
     return (
-        <div className="display">
+        <section className="display">
             <PostAdd />
             {/* conditionnal template to show to handle fetch error */}
             {error && <p>{error}</p>}
             {/* temporarily conditionnal template to show while posts data is being fetched */}
             {isFetching && <p>Recent posts is on the way...</p>}
             <Posts posts={posts} onDeletePost={onDeletePost} />
-        </div>
+        </section>
     );
 
 }

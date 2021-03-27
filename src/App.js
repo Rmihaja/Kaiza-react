@@ -4,7 +4,7 @@ import './styles/posts.css';
 import './styles/messages.css';
 import Header from './components/Header';
 import Home from './components/Home';
-import Navbar from './components/Navbar';
+import Navbar from './components/Nav/Navbar';
 
 function App() {
 
