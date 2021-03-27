@@ -17,7 +17,11 @@ const PostAdd = () => {
             <div className="add post">
                 <div className="box">
                     <textarea  className="textcontent" placeholder='Post your day...'></textarea>
-                    <button className="round-corner">+</button>
+                    <button className="round-corner">
+                        <span className="material-icons">
+                            add
+                        </span>
+                    </button>
                 </div>
                 <div className="box">
                     <label className="morecontent">+ Photo<input type='file' accept='image/*' onChange={onAddPhoto}></input></label>

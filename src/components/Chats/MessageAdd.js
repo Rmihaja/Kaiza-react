@@ -2,8 +2,12 @@ const MessageAdd = () => {
     return ( 
         <div class="add message">
             <div class="box message">
-                <input class="textcontent" id="inputMessageContent" type="text" placeholder="Ecrire un message..." />
-                <button class="round-corner" id="submitMessageButton">{'>'}</button>
+                <input className="textcontent" type="text" placeholder="Ecrire un message..." />
+                <button className="round-corner">
+                    <span className="material-icons">
+                        send
+                    </span>
+                </button>
             </div>       
         </div>
      );

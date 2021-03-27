@@ -23,7 +23,7 @@
         {
             "id": "0",
             "name": "Bienvenue",
-            "icon": null,
+            "icon": "emoji_emotions",
             "members": [
                 {
                     "name": "Mihaja Razafimahefa"
@@ -43,7 +43,7 @@
         {
             "id": "0",
             "name": "Comptabilité et Finances",
-            "icon": null,
+            "icon": "analytics",
             "members": [
                 {
                     "name": "Mihaja Razafimahefa"
@@ -54,7 +54,7 @@
         {
             "id": "0",
             "name": "Recherche et Développement",
-            "icon": null,
+            "icon": "lightbulb",
             "members": [
                 {
                     "name": "Mihaja Razafimahefa"
@@ -65,7 +65,7 @@
         {
             "id": "0",
             "name": "Resources Humaines",
-            "icon": null,
+            "icon": "contact_page",
             "members": [
                 {
                     "name": "Mihaja Razafimahefa"
@@ -76,7 +76,7 @@
         {
             "id": "0",
             "name": "Production",
-            "icon": null,
+            "icon": "smart_toy",
             "members": [
                 {
                     "name": "Mihaja Razafimahefa"
@@ -87,7 +87,7 @@
         {
             "id": "0",
             "name": "Marketing et vente",
-            "icon": null,
+            "icon": "sell",
             "members": [
                 {
                     "name": "Mihaja Razafimahefa"
@@ -98,7 +98,7 @@
         {
             "id": "0",
             "name": "Direction et administration",
-            "icon": null,
+            "icon": "admin_panel_settings",
             "members": [
                 {
                     "name": "Mihaja Razafimahefa"
@@ -109,7 +109,7 @@
         {
             "id": "0",
             "name": "Logistique",
-            "icon": null,
+            "icon": "local_shipping",
             "members": [
                 {
                     "name": "Mihaja Razafimahefa"
