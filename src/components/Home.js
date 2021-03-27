@@ -42,8 +42,13 @@ const Home = () => {
     // * event listener
     // delete the post selected by user
     const onDeletePost = (postId) => {
-        // const filteredPosts = posts.filter(post => post.id !== postId);
-        // setPosts(filteredPosts);
+        
+        // fetch DELETE to json server
+        fetch('http://localhost:8000/posts/' + postId, {
+            method: 'DELETE',
+        }).then(() => {
+            history.push('/');
+        })
     }
 
 
