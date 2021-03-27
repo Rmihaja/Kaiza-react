@@ -1,5 +1,5 @@
 import { useState } from "react";
-const PostAdd = () => {
+const PostAdd = ({inputContent, setInputContent, onSubmitMessage}) => {
 
     
     // * variable init
@@ -14,9 +14,9 @@ const PostAdd = () => {
     }
 
     return ( 
-            <div className="add post">
+            <form className="add post" onSubmit={onSubmitMessage}>
                 <div className="box">
-                    <textarea  className="textcontent" placeholder='Post your day...'></textarea>
+                    <textarea  className="textcontent" placeholder='Poster une nouvelle annonce...' value={inputContent} onChange={event => setInputContent(event.target.value)}></textarea>
                     <button className="round-corner">
                         <span className="material-icons">
                             add
@@ -27,7 +27,7 @@ const PostAdd = () => {
                     <label className="morecontent">+ Photo<input type='file' accept='image/*' onChange={onAddPhoto}></input></label>
                     <p>{photoDescription}</p>
                 </div>
-            </div>
+            </form>
      );
 }
  

@@ -8,17 +8,17 @@
     ],
     "posts": [
         {
-            "id": "pa98db973kw", 
+            "id": "pa98db973kw",
             "authorId": "ukat9irfrhk",
-            "submitDate": "18:42", 
-            "content": "How is your day going? Mine was good!",
+            "submitDate": "18:42",
+            "content": "Si vous aimez l'application, n'hésitez pas à visiter son code source!",
             "additionalContent": null
         },
         {
-            "id": "p9zix6g3f58", 
+            "id": "p9zix6g3f58",
             "authorId": "ukat9irfrhk",
-            "submitDate": "18:40", 
-            "content": "Hello to Kaiza posts!",
+            "submitDate": "18:40",
+            "content": "Bienvenue sur Kaiza!",
             "additionalContent": null
         }
     ],
@@ -27,13 +27,15 @@
             "id": "gm30s6zt3ayy",
             "name": "Bienvenue",
             "icon": "emoji_emotions",
-            "membersId": ["ukat9irfrhk"],
+            "membersId": [
+                "ukat9irfrhk"
+            ],
             "messages": [
                 {
                     "id": "ma98db973kw",
                     "authorId": "ukat9irfrhk",
                     "submitDate": "08:02",
-                    "content": "Welcome!",
+                    "content": "Bienvenue!",
                     "additionalContent": null
                 }
             ]
@@ -42,49 +44,63 @@
             "id": "gmpfyemwjwmp",
             "name": "Comptabilité et Finances",
             "icon": "analytics",
-            "membersId": ["ukat9irfrhk"],
+            "membersId": [
+                "ukat9irfrhk"
+            ],
             "messages": []
         },
         {
             "id": "gm7yxs53jyfj",
             "name": "Recherche et Développement",
             "icon": "lightbulb",
-            "membersId": ["ukat9irfrhk"],
+            "membersId": [
+                "ukat9irfrhk"
+            ],
             "messages": []
         },
         {
             "id": "gmgor1ghnuqb",
             "name": "Resources Humaines",
             "icon": "contact_page",
-            "membersId": ["ukat9irfrhk"],
+            "membersId": [
+                "ukat9irfrhk"
+            ],
             "messages": []
         },
         {
             "id": "gmmzdqmf1776",
             "name": "Production",
             "icon": "smart_toy",
-            "membersId": ["ukat9irfrhk"],
+            "membersId": [
+                "ukat9irfrhk"
+            ],
             "messages": []
         },
         {
             "id": "gm9zuzktt468",
             "name": "Marketing et vente",
             "icon": "sell",
-            "membersId": ["ukat9irfrhk"],
+            "membersId": [
+                "ukat9irfrhk"
+            ],
             "messages": []
         },
         {
             "id": "gm3kupe23i14",
             "name": "Direction et administration",
             "icon": "admin_panel_settings",
-            "membersId": ["ukat9irfrhk"],
+            "membersId": [
+                "ukat9irfrhk"
+            ],
             "messages": []
         },
         {
             "id": "gmel090rapo8",
             "name": "Logistique",
             "icon": "local_shipping",
-            "membersId": ["ukat9irfrhk"],
+            "membersId": [
+                "ukat9irfrhk"
+            ],
             "messages": []
         }
     ]
