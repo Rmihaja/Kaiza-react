@@ -1,9 +1,13 @@
 const ContactAdd = () => {
     return ( 
         <section>
-            <p>
-                Let us access your contact book to easily add your friends!
-            </p>
+            <span class="material-icons">
+                chat_bubble
+            </span>
+            <h4>
+                Discutez avec vos proches directement dans Kaiza! 
+            </h4>
+            <p>(Fonctionnalité à venir)</p>
         </section>
      );
 }

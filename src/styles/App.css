@@ -16,6 +16,15 @@ html {
    background-color: var(--bg);
 }
 
+section {
+   height: 80vh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
 h1 {
    color: var(--text-accent);
    text-transform: uppercase;
