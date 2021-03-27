@@ -41,7 +41,7 @@
             ]
         },
         {
-            "id": "0",
+            "id": "1",
             "name": "Comptabilité et Finances",
             "icon": "analytics",
             "members": [
@@ -52,7 +52,7 @@
             "messages": []
         },
         {
-            "id": "0",
+            "id": "2",
             "name": "Recherche et Développement",
             "icon": "lightbulb",
             "members": [
@@ -63,7 +63,7 @@
             "messages": []
         },
         {
-            "id": "0",
+            "id": "3",
             "name": "Resources Humaines",
             "icon": "contact_page",
             "members": [
@@ -74,7 +74,7 @@
             "messages": []
         },
         {
-            "id": "0",
+            "id": "4",
             "name": "Production",
             "icon": "smart_toy",
             "members": [
@@ -85,7 +85,7 @@
             "messages": []
         },
         {
-            "id": "0",
+            "id": "5",
             "name": "Marketing et vente",
             "icon": "sell",
             "members": [
@@ -96,7 +96,7 @@
             "messages": []
         },
         {
-            "id": "0",
+            "id": "6",
             "name": "Direction et administration",
             "icon": "admin_panel_settings",
             "members": [
@@ -107,7 +107,7 @@
             "messages": []
         },
         {
-            "id": "0",
+            "id": "7",
             "name": "Logistique",
             "icon": "local_shipping",
             "members": [

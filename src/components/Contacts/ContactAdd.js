@@ -1,9 +1,9 @@
 const ContactAdd = () => {
     return ( 
         <section>
-            <h2>
+            <p>
                 Let us access your contact book to easily add your friends!
-            </h2>
+            </p>
         </section>
      );
 }

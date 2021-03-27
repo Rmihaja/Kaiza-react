@@ -4,14 +4,14 @@ import NavSection from "./NavSection";
 
 const Navbar = () => {
     
-    const { data: groupChatTabs, isFetching, error } = useFetch('http://localhost:8000/chats'); 
+    const { data: groupChatTabs } = useFetch('http://localhost:8000/chats'); 
 
     return ( 
         <nav>
             {/* activity section */}
-            <h1 class="nav-category">Activités</h1>
-            <Link to="/" class="active">
-                <span class="material-icons">
+            <h1 className="nav-category">Activités</h1>
+            <Link to="/" className="active">
+                <span className="material-icons">
                     campaign
                 </span>
                 <p>Annonces</p>
@@ -21,9 +21,9 @@ const Navbar = () => {
             <NavSection name="Groupes" tabsList={groupChatTabs} />
             
             {/* people section */}
-            <h1 class="nav-category">Conversations</h1>
+            <h1 className="nav-category">Conversations</h1>
             <Link to="/contacts/add">
-                <span class="material-icons">
+                <span className="material-icons">
                     person_add
                 </span>
                 <p>Ajouter un contact</p>

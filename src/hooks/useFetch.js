@@ -6,11 +6,16 @@ const useFetch = url => {
     const [isFetching, setIsFetching] = useState(true);
     const [error, setError] = useState('');
 
+    // handle fetch operation to abort if user change view
+    const abortController = new AbortController();
+
     // useEffect to get posts data from json server on first reload
     useEffect(() => {
         console.log('useEfect called');
         // GET data from url
-        fetch(url)
+        
+        
+        fetch(url, { signal: abortController.signal })
             .then(res => {
                 // return custom error if server response is not OK
                 if (!res.ok) {
@@ -22,13 +27,23 @@ const useFetch = url => {
             .then(data => {
                 // response returns json data promise
                 setData(data);
+                setIsFetching(false);
                 setError('');
             })
             .catch(err => {
-                // store error, if any
-                setError(err.message);
+                // catch abort error
+                if (err.name === 'AbortError') {
+                    console.log('fetch aborted');
+                }
+                else {
+                    // store error, if any
+                    setError(err.message);
+                    setIsFetching(false);
+                }
             });
-        setIsFetching(false);
+
+        // return abort error if component is not in view anymore
+        return () => abortController.abort();
     },
         // dependency of useEffect
         // ? we specified a dependency to call use effect only when passing/changing the url

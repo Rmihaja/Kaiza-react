@@ -4,9 +4,9 @@ const NavSection = ({ name, tabsList }) => {
             <h1 className="nav-category">{name}</h1>
             <div>
                 {tabsList.map(tab => (
-                    <a id={tab.id} href="#">
+                    <a href={tab.id}>
                         <span className="material-icons">
-                            { tab.icon }
+                            {tab.icon}
                         </span>    
                         <p>{tab.name}</p>
                     </a>
