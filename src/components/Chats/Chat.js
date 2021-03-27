@@ -31,7 +31,7 @@ const Chat = () => {
         chat.messages.push(message)
 
         // fetch PATCH 'messages' to json server
-        fetch('http://localhost:8000/chats/' + id, {
+        fetch('https://my-json-server.typicode.com/rmihaja/kaiza-react' + id, {
             method: 'PATCH',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

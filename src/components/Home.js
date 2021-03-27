@@ -27,7 +27,7 @@ const Home = () => {
         };
 
         // fetch POST to json server
-        fetch('http://localhost:8000/posts', {
+        fetch('https://my-json-server.typicode.com/rmihaja/kaiza-react', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(post)
@@ -44,7 +44,7 @@ const Home = () => {
     const onDeletePost = (postId) => {
         
         // fetch DELETE to json server
-        fetch('http://localhost:8000/posts/' + postId, {
+        fetch('https://my-json-server.typicode.com/rmihaja/kaiza-react' + postId, {
             method: 'DELETE',
         }).then(() => {
             history.push('/');

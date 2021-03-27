@@ -11,7 +11,7 @@ const useFetch = url => {
     useEffect(() => {
 
         // server url
-        const serverRoot = 'http://localhost:8000/';
+        const serverRoot = 'https://my-json-server.typicode.com/rmihaja/kaiza-react';
 
         // handle fetch operation to abort if user change view
         const abortController = new AbortController();
