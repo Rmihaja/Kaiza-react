@@ -4,7 +4,7 @@ import NavSection from "./NavSection";
 
 const Navbar = () => {
     
-    const { data: groupChatTabs } = useFetch('http://localhost:8000/chats'); 
+    const { data: groupChatTabs } = useFetch('chats'); 
 
     return ( 
         <nav>

@@ -1,18 +1,20 @@
 import ProfilePicture from "../ProfilePicture";
+import UserName from "../UserName";
 
-const Messages = ({ messagesData }) => {
+const Messages = ({ messages }) => {
+
     return ( 
-        <ul>
-           { messagesData.map(message => {
-                <li>
-                <ProfilePicture name={message.author.name} />
-                <div class="metadata">
-                    <h2>{ message.author.name }</h2>
+        <ul className="messages">
+           { messages.map(message => (
+                <li className="show" key={message.id}>
+                <ProfilePicture id={message.authorId} />
+                <div className="metadata">
+                    <UserName id={message.authorId} />
                     <h3>{ message.submitDate }</h3>
-                <p>{ message.content }</p>
+                    <p>{ message.content }</p>
                 </div>
             </li>
-           })
+           ))
         }
         </ul>
      );

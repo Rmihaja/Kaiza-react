@@ -6,16 +6,18 @@ const useFetch = url => {
     const [isFetching, setIsFetching] = useState(true);
     const [error, setError] = useState('');
 
-    // handle fetch operation to abort if user change view
-    const abortController = new AbortController();
 
     // useEffect to get posts data from json server on first reload
     useEffect(() => {
-        console.log('useEfect called');
+
+        // server url
+        const serverRoot = 'http://localhost:8000/';
+
+        // handle fetch operation to abort if user change view
+        const abortController = new AbortController();
+        
         // GET data from url
-        
-        
-        fetch(url, { signal: abortController.signal })
+        fetch(serverRoot + url, { signal: abortController.signal })
             .then(res => {
                 // return custom error if server response is not OK
                 if (!res.ok) {

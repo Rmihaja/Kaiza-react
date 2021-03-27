@@ -1,19 +1,22 @@
 {
+    "users": [
+        {
+            "id": "ukat9irfrhk",
+            "firstName": "Mihaja",
+            "lastName": "Razafimahefa"
+        }
+    ],
     "posts": [
         {
             "id": "pa98db973kw", 
-            "author": {
-                "name": "Mihaja Razafimahefa"
-                }, 
+            "authorId": "ukat9irfrhk",
             "submitDate": "18:42", 
             "content": "How is your day going? Mine was good!",
             "additionalContent": null
         },
         {
             "id": "p9zix6g3f58", 
-            "author": {
-                "name": "Mihaja Razafimahefa"
-                }, 
+            "authorId": "ukat9irfrhk",
             "submitDate": "18:40", 
             "content": "Hello to Kaiza posts!",
             "additionalContent": null
@@ -24,16 +27,11 @@
             "id": "gm30s6zt3ayy",
             "name": "Bienvenue",
             "icon": "emoji_emotions",
-            "members": [
-                {
-                    "name": "Mihaja Razafimahefa"
-                }
-            ],
+            "membersId": ["ukat9irfrhk"],
             "messages": [
                 {
-                    "author": {
-                        "name": "Mihaja Razafimahefa"
-                    },
+                    "id": "ma98db973kw",
+                    "authorId": "ukat9irfrhk",
                     "submitDate": "08:02",
                     "content": "Welcome!",
                     "additionalContent": null
@@ -44,77 +42,49 @@
             "id": "gmpfyemwjwmp",
             "name": "Comptabilité et Finances",
             "icon": "analytics",
-            "members": [
-                {
-                    "name": "Mihaja Razafimahefa"
-                }
-            ],
+            "membersId": ["ukat9irfrhk"],
             "messages": []
         },
         {
             "id": "gm7yxs53jyfj",
             "name": "Recherche et Développement",
             "icon": "lightbulb",
-            "members": [
-                {
-                    "name": "Mihaja Razafimahefa"
-                }
-            ],
+            "membersId": ["ukat9irfrhk"],
             "messages": []
         },
         {
             "id": "gmgor1ghnuqb",
             "name": "Resources Humaines",
             "icon": "contact_page",
-            "members": [
-                {
-                    "name": "Mihaja Razafimahefa"
-                }
-            ],
+            "membersId": ["ukat9irfrhk"],
             "messages": []
         },
         {
             "id": "gmmzdqmf1776",
             "name": "Production",
             "icon": "smart_toy",
-            "members": [
-                {
-                    "name": "Mihaja Razafimahefa"
-                }
-            ],
+            "membersId": ["ukat9irfrhk"],
             "messages": []
         },
         {
             "id": "gm9zuzktt468",
             "name": "Marketing et vente",
             "icon": "sell",
-            "members": [
-                {
-                    "name": "Mihaja Razafimahefa"
-                }
-            ],
+            "membersId": ["ukat9irfrhk"],
             "messages": []
         },
         {
             "id": "gm3kupe23i14",
             "name": "Direction et administration",
             "icon": "admin_panel_settings",
-            "members": [
-                {
-                    "name": "Mihaja Razafimahefa"
-                }
-            ],
+            "membersId": ["ukat9irfrhk"],
             "messages": []
         },
         {
             "id": "gmel090rapo8",
             "name": "Logistique",
             "icon": "local_shipping",
-            "members": [
-                {
-                    "name": "Mihaja Razafimahefa"
-                }
-            ],
+            "membersId": ["ukat9irfrhk"],
             "messages": []
         }
     ]
