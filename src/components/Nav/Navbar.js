@@ -10,7 +10,7 @@ const Navbar = () => {
         <nav>
             {/* activity section */}
             <h1 className="nav-category">Activités</h1>
-            <Link to="/" className="active">
+            <Link to="/">
                 <span className="material-icons">
                     campaign
                 </span>

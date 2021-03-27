@@ -1,7 +1,7 @@
 {
     "posts": [
         {
-            "id": 0, 
+            "id": "pa98db973kw", 
             "author": {
                 "name": "Mihaja Razafimahefa"
                 }, 
@@ -10,7 +10,7 @@
             "additionalContent": null
         },
         {
-            "id": 1, 
+            "id": "p9zix6g3f58", 
             "author": {
                 "name": "Mihaja Razafimahefa"
                 }, 
@@ -21,7 +21,7 @@
     ],
     "chats": [
         {
-            "id": "0",
+            "id": "gm30s6zt3ayy",
             "name": "Bienvenue",
             "icon": "emoji_emotions",
             "members": [
@@ -41,7 +41,7 @@
             ]
         },
         {
-            "id": "1",
+            "id": "gmpfyemwjwmp",
             "name": "Comptabilité et Finances",
             "icon": "analytics",
             "members": [
@@ -52,7 +52,7 @@
             "messages": []
         },
         {
-            "id": "2",
+            "id": "gm7yxs53jyfj",
             "name": "Recherche et Développement",
             "icon": "lightbulb",
             "members": [
@@ -63,7 +63,7 @@
             "messages": []
         },
         {
-            "id": "3",
+            "id": "gmgor1ghnuqb",
             "name": "Resources Humaines",
             "icon": "contact_page",
             "members": [
@@ -74,7 +74,7 @@
             "messages": []
         },
         {
-            "id": "4",
+            "id": "gmmzdqmf1776",
             "name": "Production",
             "icon": "smart_toy",
             "members": [
@@ -85,7 +85,7 @@
             "messages": []
         },
         {
-            "id": "5",
+            "id": "gm9zuzktt468",
             "name": "Marketing et vente",
             "icon": "sell",
             "members": [
@@ -96,7 +96,7 @@
             "messages": []
         },
         {
-            "id": "6",
+            "id": "gm3kupe23i14",
             "name": "Direction et administration",
             "icon": "admin_panel_settings",
             "members": [
@@ -107,7 +107,7 @@
             "messages": []
         },
         {
-            "id": "7",
+            "id": "gmel090rapo8",
             "name": "Logistique",
             "icon": "local_shipping",
             "members": [

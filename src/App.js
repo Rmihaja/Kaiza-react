@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Navbar from './components/Nav/Navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ContactAdd from './components/Contacts/ContactAdd';
+import Chat from './components/Chats/Chat'
 
 function App() {
 
@@ -23,6 +24,9 @@ function App() {
               </Route>
               <Route path="/contacts/add">
                 <ContactAdd />
+              </Route>
+              <Route path="/chats/:id">
+                <Chat />
               </Route>
             </Switch>
           </main>

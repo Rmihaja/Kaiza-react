@@ -1,12 +1,14 @@
+import { useParams } from "react-router-dom"
 import MessageAdd from "./MessageAdd"
 import Messages from "./Messages"
 
-const Chat = ({ chatData }) => {
+const Chat = () => {
+
     return ( 
 
         <section>
                 
-            <Messages messagesData={chatData} />
+            {/* <Messages messagesData={chatData} /> */}
             <MessageAdd />
                 
         </section>
