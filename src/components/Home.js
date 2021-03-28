@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
+import useId from "../hooks/useId";
 import PostAdd from "./Posts/PostAdd";
 import Posts from "./Posts/Posts";
 
@@ -8,7 +9,7 @@ const Home = () => {
 
     // fetching posts list
     // set data received posts variable
-    const { data: posts, isFetching, error } = useFetch('posts');
+    const { data: posts, setData: setPosts, isFetching, error } = useFetch('posts');
     
     // submit post to server
     const [content, setContent] = useState('');
@@ -18,36 +19,50 @@ const Home = () => {
 
     const sendPost = event => {
         event.preventDefault();
-        const post = {
-            authorId: "ukat9irfrhk",
-            // getting HH:MM formated time (5 first letter value)
-            submitDate: new Date().toTimeString().substr(0, 5),
-            content: content,
-            additionalContent: null
-        };
-
-        // fetch POST to json server
-        fetch('https://my-json-server.typicode.com/rmihaja/kaiza-react', {
-            method: 'POST',
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(post)
-        })
-            .then(() => {
-                console.log('post submitted successfully');
-                history.push('/');
-        })
+        
+        if (content) {
+            const post = {
+                // eslint-disable-next-line react-hooks/rules-of-hooks
+                id: useId('p'),
+                authorId: "ukat9irfrhk",
+                // getting HH:MM formated time (5 first letter value)
+                submitDate: new Date().toTimeString().substr(0, 5),
+                content: content,
+                additionalContent: null
+            };
+            posts.push(post);
+    
+            // fetch POST to json server
+            fetch('https://my-json-server.typicode.com/rmihaja/kaiza-react/posts/', {
+                method: 'POST',
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(post)
+            })
+                .then((res) => {
+                    if (res.ok) {
+                        console.log('post submitted successfully');
+                        history.push('/');
+                        setContent('');
+                    }
+                })
+        }
     }
 
 
     // * event listener
     // delete the post selected by user
     const onDeletePost = (postId) => {
+
+        setPosts(posts.filter(post => post.id !== postId));
         
         // fetch DELETE to json server
-        fetch('https://my-json-server.typicode.com/rmihaja/kaiza-react' + postId, {
+        fetch('https://my-json-server.typicode.com/rmihaja/kaiza-react/posts/' + postId, {
             method: 'DELETE',
-        }).then(() => {
-            history.push('/');
+        }).then((res) => {
+            if (res.ok) {
+                history.push('/');
+                console.log('post deleted successfully');    
+            }
         })
     }
 

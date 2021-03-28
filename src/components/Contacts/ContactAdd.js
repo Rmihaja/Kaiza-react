@@ -1,7 +1,7 @@
 const ContactAdd = () => {
     return ( 
         <section className="info">
-            <span class="material-icons">
+            <span className="material-icons">
                 chat_bubble
             </span>
             <h4>

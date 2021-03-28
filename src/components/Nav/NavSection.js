@@ -4,16 +4,18 @@ const NavSection = ({ name, tabsList }) => {
     return ( 
         <div className="NavSection">
             <h1 className="nav-category">{name}</h1>
-            <div>
+            <ul>
                 {tabsList.map(tab => (
-                    <Link to={`/chats/${tab.id}`}>
-                        <span className="material-icons">
-                            {tab.icon}
-                        </span>    
-                        <p>{tab.name}</p>
-                    </Link>
+                    <li key={tab.id}>
+                        <Link to={`/chats/${tab.id}`}>
+                            <span className="material-icons">
+                                {tab.icon}
+                            </span>    
+                            <p>{tab.name}</p>
+                        </Link>
+                    </li>
                 ))}
-            </div>
+            </ul>
         </div>
      );
 }

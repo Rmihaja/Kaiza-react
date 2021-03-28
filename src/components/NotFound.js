@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const NotFound = () => {
     return ( 
         <section className="info">
-            <span class="material-icons">
+            <span className="material-icons">
                 error
             </span>
             <h4>Erreur 404 - Votre lien est invalide</h4>

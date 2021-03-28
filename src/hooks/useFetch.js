@@ -11,7 +11,7 @@ const useFetch = url => {
     useEffect(() => {
 
         // server url
-        const serverRoot = 'https://my-json-server.typicode.com/rmihaja/kaiza-react';
+        const serverRoot = 'https://my-json-server.typicode.com/rmihaja/kaiza-react/';
 
         // handle fetch operation to abort if user change view
         const abortController = new AbortController();
@@ -21,7 +21,7 @@ const useFetch = url => {
             .then(res => {
                 // return custom error if server response is not OK
                 if (!res.ok) {
-                    throw Error('Could not fetch the data from server. Please refresh');
+                    throw Error('Impossible d\'obtenir les données du serveur. Veuillez réactualiser');
                 }
                 // server returns response promise
                 return res.json();
@@ -52,7 +52,7 @@ const useFetch = url => {
         // ? to fetch the data from server
         [url]);
 
-    return { data, isFetching, error };
+    return { data, setData, isFetching, error };
 }
  
 export default useFetch;
