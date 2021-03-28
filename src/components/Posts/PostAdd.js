@@ -1,4 +1,3 @@
-import { useState } from "react";
 const PostAdd = ({inputContent, setInputContent, imageDescription, setImageDescription, setImageContent, onSubmitMessage}) => {
 
     // * event listeners

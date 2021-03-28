@@ -9,6 +9,7 @@ const Header = () => {
                         menu
                     </span>
                 </a>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a href="#" className="menu-close icon">
                     <span className="material-icons">
                         close
