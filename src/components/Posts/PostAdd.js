@@ -1,16 +1,16 @@
 import { useState } from "react";
-const PostAdd = ({inputContent, setInputContent, onSubmitMessage}) => {
-
-    
-    // * variable init
-    // photo name description hook
-    const [photoDescription, setPhotoDescription] = useState('');
+const PostAdd = ({inputContent, setInputContent, imageDescription, setImageDescription, setImageContent, onSubmitMessage}) => {
 
     // * event listeners
     const onAddPhoto = event => {
-        let photoName = event.nativeEvent.target.files[0].name;
-        console.log(photoName);
-        setPhotoDescription(photoName);
+
+        let photo = event.nativeEvent.target.files[0];
+        
+        let imageURL = URL.createObjectURL(photo);
+        URL.revokeObjectURL(photo);
+        
+        setImageContent(imageURL);
+        setImageDescription(photo.name);
     }
 
     return ( 
@@ -25,7 +25,7 @@ const PostAdd = ({inputContent, setInputContent, onSubmitMessage}) => {
                 </div>
                 <div className="box">
                     <label className="morecontent">+ Photo<input type='file' accept='image/*' onChange={onAddPhoto}></input></label>
-                    <p>{photoDescription}</p>
+                    <p>{imageDescription}</p>
                 </div>
             </form>
      );

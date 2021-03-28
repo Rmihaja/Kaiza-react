@@ -64,7 +64,7 @@ const Chat = () => {
                         <p>Chargement de vos messages...</p>
                     </ul>
             )}
-            {!isFetching && <Messages messages={chat.messages} />}
+            {chat.messages && <Messages messages={chat.messages} />}
             <MessageAdd inputContent={content} setInputContent={setContent} onSubmitMessage={sendMessage} />
                 
         </section>

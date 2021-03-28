@@ -14,9 +14,10 @@ const Posts = ({ posts, onDeletePost }) => {
                             <ProfilePicture id={post.authorId} />
                             <UserName id={post.authorId} />
                             <h3>{post.submitDate}</h3>
-                            <button className="padding" onClick={() => onDeletePost(post.id)}>Delete</button>
+                            <button className="padding" onClick={() => onDeletePost(post.id)}>Supprimer</button>
                         </div>
                         <p>{post.content}</p>
+                        { post.additionalContent && <img src={post.additionalContent.image} alt=""></img> }
                     </li>
                     )
                 })
