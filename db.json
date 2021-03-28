@@ -11,7 +11,7 @@
       "id": "p9zix6g3f58",
       "authorId": "ukat9irfrhk",
       "submitDate": "18:40",
-      "content": "Bienvenue sur Kaiza!",
+      "content": "Bienvenue sur Kaiza!\n⚠ Ceci est une version test, les données ajoutées ne seront pas conservées après réactualisation.",
       "additionalContent": null
     },
     {
@@ -37,6 +37,20 @@
           "submitDate": "08:02",
           "content": "Bienvenue!",
           "additionalContent": null
+        },
+        {
+          "id": "ma98db973kw",
+          "authorId": "ukat9irfrhk",
+          "submitDate": "08:05",
+          "content": "Vous pouvez naviguez entre chaque groupe. Les messages (fictifs) seront chargées en fonction de l'onglet où vous êtes.",
+          "additionalContent": null
+        },
+        {
+          "id": "ma98db973kw",
+          "authorId": "ukat9irfrhk",
+          "submitDate": "08:07",
+          "content": "Par contre, n'oubliez pas que les messages que vous envoyez seront perdus quand vous changez de conversations! (le serveur se réinitialise automatiquement)",
+          "additionalContent": null
         }
       ]
     },
@@ -47,7 +61,15 @@
       "membersId": [
         "ukat9irfrhk"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "ma98db973kw",
+          "authorId": "ukat9irfrhk",
+          "submitDate": "10:42",
+          "content": "Vous êtes maintenant dans le groupe de la gestion et des finances",
+          "additionalContent": null
+        }
+      ]
     },
     {
       "id": "gm7yxs53jyfj",
@@ -56,16 +78,32 @@
       "membersId": [
         "ukat9irfrhk"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "ma98db973kw",
+          "authorId": "ukat9irfrhk",
+          "submitDate": "01:23",
+          "content": "💡",
+          "additionalContent": null
+        }
+      ]
     },
     {
       "id": "gmgor1ghnuqb",
-      "name": "Resources Humaines",
+      "name": "Resources",
       "icon": "contact_page",
       "membersId": [
         "ukat9irfrhk"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "ma98db973kw",
+          "authorId": "ukat9irfrhk",
+          "submitDate": "14:20",
+          "content": "Pour en savoir plus sur l'application, visitez son code source!",
+          "additionalContent": null
+        }
+      ]
     },
     {
       "id": "gmmzdqmf1776",
@@ -83,7 +121,15 @@
       "membersId": [
         "ukat9irfrhk"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "ma98db973kw",
+          "authorId": "ukat9irfrhk",
+          "submitDate": "21:08",
+          "content": "Si vous êtes éventuellement intéressé par le concept, faites-moi signes!",
+          "additionalContent": null
+        }
+      ]
     },
     {
       "id": "gm3kupe23i14",
@@ -92,7 +138,15 @@
       "membersId": [
         "ukat9irfrhk"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "ma98db973kw",
+          "authorId": "ukat9irfrhk",
+          "submitDate": "09:48",
+          "content": "La mise en ligne de l'application est administrée sur netlify, à partir du code source github",
+          "additionalContent": null
+        }
+      ]
     },
     {
       "id": "gmel090rapo8",
@@ -101,7 +155,15 @@
       "membersId": [
         "ukat9irfrhk"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "ma98db973kw",
+          "authorId": "ukat9irfrhk",
+          "submitDate": "16:06",
+          "content": "Un petit message pour dire que vous êtes maintenant dans le groupe Logistique",
+          "additionalContent": null
+        }
+      ]
     }
   ]
 }
