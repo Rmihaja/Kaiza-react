@@ -20,7 +20,7 @@ const Header = () => {
             <div className='row'>
                 <button className="profile-picture">MR</button>
                 <a target="_blank" rel="noreferrer" href="https://github.com/rmihaja/kaiza-react/">
-                    <span className="material-icons">
+                    <span className="material-icons" style={{color: "var(--text)"}}>
                         code
                     </span>
                     <p>Repo Github</p>

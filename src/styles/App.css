@@ -12,7 +12,7 @@ html {
 
 body {
    margin: 0px;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
    background-color: var(--bg);
 }
 
@@ -199,7 +199,7 @@ header {
 
 .menu-open span,
 .menu-close span {
-   transform: translateY(4px);
+   transform: translateY(3px);
 }
 
 .title {
