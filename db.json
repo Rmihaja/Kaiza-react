@@ -112,7 +112,15 @@
       "membersId": [
         "ukat9irfrhk"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "ma98db973kw",
+          "authorId": "ukat9irfrhk",
+          "submitDate": "14:20",
+          "content": "Kaiza est encore en production, pour un moment...",
+          "additionalContent": null
+        }
+      ]
     },
     {
       "id": "gm9zuzktt468",

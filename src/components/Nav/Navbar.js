@@ -7,7 +7,7 @@ const Navbar = () => {
     const { data: groupChatTabs } = useFetch('chats'); 
 
     return ( 
-        <nav>
+        <nav id="navbar">
             {/* activity section */}
             <h1 className="nav-category">Activités</h1>
             <Link to="/">

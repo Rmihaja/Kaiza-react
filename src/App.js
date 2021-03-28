@@ -14,7 +14,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App light">
+      <div className="App">
         <Header />  
         <div className="content">
           <Navbar />

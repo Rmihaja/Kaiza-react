@@ -10,18 +10,27 @@ html {
    width: 100%;
 }
 
-.App {
+body {
    margin: 0px;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    background-color: var(--bg);
 }
 
-section.info {
-   height: 80vh;
+main {
    width: 100%;
+   height: 100%;
+}
+
+section {
    display: flex;
    flex-direction: column;
    align-items: center;
+   /* height: 100vh; */
+}
+
+section.info {
+   height: 80vh;
+   width: 100%;
    justify-content: center;
 }
 
@@ -48,6 +57,11 @@ h3 {
    color: var(--accent1);
 }
 
+h4 {
+   text-align: center;
+   margin: 20px;
+}
+
 p {
    font-size: 12px;
    color: var(--text);
@@ -58,7 +72,6 @@ a {
    display: flex;
    flex-direction: row;
    align-items: center;
-   color: var(--accent1);
    margin-left: 10px;
    padding: 0px 10px 0px 10px;
    border-radius: var(--box-radius);
@@ -106,6 +119,7 @@ a:hover,
 
 .icon {
    background-color: var(--bg-icon);
+   color: var(--accent1);
    height: 30px;
    width: 30px;
    border-radius: var(--box-radius);
@@ -171,9 +185,21 @@ header {
    margin: 0px;
    padding: 5px 20px 5px 20px;
    position: sticky;
-   z-index: 1;
+   z-index: 2;
    top: 0px;
    box-shadow: var(--shadow);
+}
+
+.menu-open,
+.menu-close {
+   display: none;
+   margin: 0px 10px 0px 0px;
+   padding: 0px;
+}
+
+.menu-open span,
+.menu-close span {
+   transform: translateY(4px);
 }
 
 .title {
@@ -197,6 +223,10 @@ header {
    transform: translate(-35px, 0px);
 }
 
+header p {
+   padding-left: 5px;
+}
+
 /* *** nav layer */
 
 nav {
@@ -210,10 +240,12 @@ nav {
    height: 92vh;
    scrollbar-width: none;
    background-color: var(--bg-header);
+   z-index: 1;
 }
 
 .nav-category {
    font-size: 12px;
+   color: var(--accent1);
    padding: 5px 0px 0px 20px;
 }
 
@@ -260,19 +292,6 @@ nav p {
    height: auto;
    padding: auto;
    /* overflow: visible; */
-}
-
-/* *** section layer */
-
-main {
-   width: 100%;
-   height: 100%;
-}
-
-.display {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
 }
 
 /* post editor */
@@ -355,4 +374,40 @@ li img {
    width: inherit;
    height: auto;
    border-radius: var(--box-radius);
+}
+
+/* responsive properties */
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+   .menu-open {
+      display: block;
+   }
+
+   #root:target .menu-open {
+      display: none;
+   }
+
+   .menu-close {
+      display: none;
+   }
+
+   #root:target .menu-close {
+      display: block;
+   }
+
+   nav {
+      position: fixed;
+      left: -250px;
+      box-shadow: var(--shadow);
+      height: 100vh;
+   }
+
+   #root:target nav {
+      left: 0px;
+   }
+
+   #root:target section {
+      filter: blur(2px);
+   }
 }

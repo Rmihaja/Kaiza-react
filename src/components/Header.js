@@ -3,14 +3,26 @@ const Header = () => {
     // component
     return ( 
         <header className='row'>
-            <h1 className="title">Kaiza</h1>
+            <div className="row">
+                <a href="#root" className="menu-open icon">
+                    <span className="material-icons">
+                        menu
+                    </span>
+                </a>
+                <a href="#" className="menu-close icon">
+                    <span className="material-icons">
+                        close
+                    </span>
+                </a>
+                <h1 className="title">Kaiza</h1>
+            </div>
             <div className='row'>
                 <button className="profile-picture">MR</button>
                 <a target="_blank" rel="noreferrer" href="https://github.com/rmihaja/kaiza-react/">
                     <span className="material-icons">
                         code
                     </span>
-                    <p>Github</p>
+                    <p>Repo Github</p>
                 </a>
             </div>
         </header>
