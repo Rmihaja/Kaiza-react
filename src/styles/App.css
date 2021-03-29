@@ -5,20 +5,19 @@
    transition: all 0.3s ease-in-out;
 }
 
-html {
-   height: 100%;
+html,
+body,
+body > div,
+.App,
+main {
    width: 100%;
+   height: 100%;
 }
 
 body {
    margin: 0px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    background-color: var(--bg);
-}
-
-main {
-   width: 100%;
-   height: 100%;
 }
 
 section {

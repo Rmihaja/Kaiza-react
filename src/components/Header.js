@@ -21,9 +21,9 @@ const Header = () => {
                 <button className="profile-picture">MR</button>
                 <a target="_blank" rel="noreferrer" href="https://github.com/rmihaja/kaiza-react/">
                     <span className="material-icons" style={{color: "var(--text)"}}>
-                        code
+                        launch
                     </span>
-                    <p>Repo Github</p>
+                    <p>Github repo</p>
                 </a>
             </div>
         </header>
